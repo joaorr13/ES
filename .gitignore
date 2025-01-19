@@ -1,0 +1,76 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Python virtual environments
+.venv/
+.env/
+__pycache__/
+*.py[cod]
+
+# Ignore Flask-related files
+instance/
+*.db
+*.sqlite3
+
+# Ignore Docker-specific files
+docker-compose.override.yml
+*.log
+**/logs/
+*.pid
+
+# Ignore Qdrant data (if using a local Qdrant installation)
+qdrant_storage/
+qdrant/data/
+
+# Ignore environment variables and sensitive files
+.env
+.env.local
+.env.*.local
+
+# Ignore package manager lock files (optional, if you don't want to version control them)
+# Uncomment the following lines if you don't want to track lock files:
+# package-lock.json
+# yarn.lock
+# poetry.lock
+# Pipfile.lock
+
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ignore test and coverage reports
+.coverage
+coverage/
+*.cover
+*.py,cover
+
+# Ignore compiled code
+*.so
+*.dll
+*.dylib
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore Qdrant docker volume (if applicable)
+qdrant_docker_data/
+
+# Ignore logs and debug output
+logs/
+*.log
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
